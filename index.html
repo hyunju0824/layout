@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <!--전체를 감싸다 라는 뜻-->
+        <!--1. header-->
+        <header>
+            <h1 class="logo"><a href="#">HTML<strong>5</strong></a></h1>
+            <!-- nav>ul.gnb>li*5>a[href="#"]{Link$} -->
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                    <li><a href="#">Link3</a></li>
+                    <li><a href="#">Link4</a></li>
+                    <li><a href="#">Link5</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!--2. div#container-->
+        <!-- div#container>div*2 -->
+        <div id="container" class="clearFix">
+            <div class="left">
+                <!-- div.listWrap>div.list*3>div.imgBox+textBox -->
+                <div class="listWrap">
+                    <div class="list clearFix">
+                        <div class="imgBox">
+                            <img src="https://via.placeholder.com/150x150" alt="">
+                        </div>
+                        <div class="textBox">
+                            <h2 class="title">Title1</h2>
+                            <p class="text">인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다. 특히 하이퍼텍스트를 작성하기
+                                위해 개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.
+                            </p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="list clearFix">
+                        <div class="imgBox">
+                            <img src="https://via.placeholder.com/150x150" alt="">
+                        </div>
+                        <div class="textBox">
+                            <h2 class="title">Title2</h2>
+                            <p class="text">인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다. 특히 하이퍼텍스트를 작성하기
+                                위해
+                                개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.
+                            </p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                    <div class="list clearFix">
+                        <div class="imgBox">
+                            <img src="https://via.placeholder.com/150x150" alt="">
+                        </div>
+                        <div class="textBox">
+                            <h2 class="title">Title3</h2>
+                            <p class="text">인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다. 특히 하이퍼텍스트를 작성하기
+                                위해
+                                개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.
+                            </p>
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right">
+                <section>
+                    <h2 class="title">Sidebar Links</h2>
+                    <ul>
+                        <li><a href="#">Link1</a></li>
+                        <li><a href="#">Link2</a></li>
+                        <li><a href="#">Link3</a></li>
+                        <li><a href="#">Link4</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="title">Other Widgets</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore voluptas ea eius eveniet
+                        maiores
+                        nisi,
+                        vitae et! Numquam hic laudantium quidem adipisci, sit deserunt ipsa excepturi magni!
+                        Eaque,
+                        expedita
+                        totam.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore voluptas ea eius
+                        eveniet
+                        maiores
+                        nisi, vitae et! Numquam hic laudantium quidem adipisci, sit deserunt ipsa excepturi
+                        magni!
+                        Eaque,
+                        expedita totam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam accusamus veritatis ab
+                        ipsum ut
+                        recusandae repellat, amet maxime eaque eos adipisci dolor atque ratione aspernatur iusto
+                        eveniet
+                        quas
+                        quia corrupti.</p>
+                </section>
+            </div>
+        </div>
+        <!--3. footer-->
+        <footer>
+            <small>Copyright <span>YourSite</span>. All right reerved.</small>
+        </footer>
+    </div>
+
+</body>
+
+</html>

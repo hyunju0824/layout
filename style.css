@@ -1,0 +1,134 @@
+body{
+    background-color: #ccc;
+    font-family: "돋움",sans-serif;
+}
+
+#wrap{
+    width: 1200px;
+    /* margin: 0 auto; */
+    background-color: rgba(255,0,0,0.2);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*가운데로 요소 보내기*/
+    /*1. 너비가 있으면서 margin:0 auto*/
+    /*2. 인라인요소일 경우 text-align:center*/
+    /*3. position:absolute 일 경우 left: 50%;
+    transform: translateX(-50%); */
+}
+header{
+    background:#333; 
+}
+.logo{
+    padding-left: 24px;
+    padding-bottom: 30px;
+}
+.logo>a{
+    color: white;
+    font-size: 1.5em;
+       /*48px*/
+    font-weight: bold;
+}
+.logo strong{
+    color: #fa8e33;
+    font-size: 2em;
+    /*96px*/
+    position: relative;
+    top: 15px;
+}
+nav{
+    background-color: #6666;
+}
+/*자식요소들이 float되면 부모찾기*/
+.gnb{
+    background-color: rgba(255,0,0,0.2);
+    /*1. 부모한테 높이를 준다.
+    height: 60px;
+    line-height: 60px;*/
+
+    /*2. 부모한테 float->자식의 너비만큼만 들어감.
+    float: left;*/
+
+    /*3. overflow*/
+
+    /*4. after 웹표준 권장*/
+
+    overflow: hidden;
+
+}
+
+
+.gnb::after{ /*가림막역할*/
+    content: "";
+    display: block; 
+    clear: both;   /*플롯 영향받지 말라*/ 
+}
+.gnb>li{
+    float: left;
+    /* line-height: 60px; */
+    border-right: 1px solid #333;
+    background-color: green;
+}
+.gnb>li>a{
+    padding:18px 23px;
+    display: block;     /*이게 없으면 a태그에 패딩 위아래를 줄 수 없어*/
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+
+/*container*/
+#container{
+    background-color: rgba(0,0,255,0.2);
+}
+
+#container>div{
+    float: left;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+.left{
+    width: 870px;
+}
+.right{
+    background-color: #ccc;
+   width: 330px;
+}
+.list{
+    border-bottom: 1px solid black;
+}
+.list>div{
+    float: left;
+}
+.list>.textBox{
+    width: 660px;
+}
+
+
+/*footer*/
+footer{
+    background-color: rgba(0,255,0,0.1);
+    clear: both;
+}
+
+
+section>h2{
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    margin:5px;
+}
+    
+
+
+
+
+/* .gnb li{ 
+float: left;
+width: 100px;
+position: relative;
+}*/
+
+
+
